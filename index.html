@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscriber Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="subscriber-background">
+    <div class="container">
+        <h1>Subscribe</h1>
+        <form id="subscriberForm">
+            <input type="text" id="fullName" placeholder="Full Name" required>
+            <input type="text" id="registrationNumber" value="NOT YET AVAILABLE" readonly>
+            <input type="text" id="profileCode" value="NOT YET AVAILABLE" readonly>
+            <input type="text" id="examTownCode" value="NOT YET AVAILABLE" readonly>
+            <input type="file" id="paymentImage" accept="image/*" required title="Upload Proof of Payment">
+            
+            <div>
+                <label>
+                    <input type="radio" name="paymentMethod" value="Direct System" required>
+                    Direct System
+                </label>
+                <label>
+                    <input type="radio" name="paymentMethod" value="Direct Mobile">
+                    Direct Mobile
+                </label>
+            </div>
+
+            <select id="paymentType" required>
+                <option value="" disabled selected>Select Payment Type</option>
+                <option value="Full Payment">Full Payment</option>
+                <option value="Half Payment">Half Payment</option>
+                <option value="Part Payment">Part Payment</option>
+            </select>
+
+            <input type="number" id="score" placeholder="Enter Score" required>
+
+            <button type="submit">Subscribe</button>
+        </form>
+        <div id="message"></div>
+        
+        <p><a href="login.html">Admin Login</a> (for your reference)</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
