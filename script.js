@@ -41,7 +41,7 @@ document.getElementById('subscriberForm').addEventListener('submit', function(ev
         });
         localStorage.setItem('subscribers', JSON.stringify(subscribers));
 
-        document.getElementById('message').innerText = 'Subscribed successfully!';
+        document.getElementById('message').innerText = 'Submission Successfully!';
         document.getElementById('subscriberForm').reset();
     };
     
