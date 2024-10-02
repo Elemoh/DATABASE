@@ -12,8 +12,8 @@ body {
 }
 
 .container {
-    width: 90%; /* Set width to a percentage for responsiveness */
-    max-width: 800px; /* Limit max-width for larger screens */
+    width: 100%; /* Set width to a percentage for responsiveness */
+    max-width: 100%; /* Limit max-width for larger screens */
     padding: 20px;
     background-color: rgba(226, 217, 217, 0.8);
     border-radius: 10px;
@@ -65,7 +65,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid #9e05053d;
+    border: 2px solid #9e05053d;
 }
 
 th, td {
