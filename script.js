@@ -1,3 +1,19 @@
+const firebaseConfig = {
+    apiKey: "AIzaSyC_iktuz2ObIcBPEi3-_m2T7kfMBYkUt5s",
+    authDomain: "database-4e74f.firebaseapp.com",
+    projectId: "database-4e74f",
+    storageBucket: "database-4e74f.appspot.com",
+    messagingSenderId: "265280109467",
+    appId: "1:265280109467:web:20142205ed7fe3fdbebf3e",
+    measurementId: "G-JGBF0XTGTM"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+
+
 document.getElementById('subscriberForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
